@@ -11,8 +11,7 @@ function writePassword() {
 
 //Generating a function to establish possbible parameters.
 function generatePassword() {
-  var passLength = prompt ("Please select password length?");
-  
+  var passLength = prompt ("Please select password length between 8-128 characters?");
   var lowerCase = confirm ("Would you like to use lowercase letters?");
   var upperCase = confirm ("Would you like to use uppercase letters?");
   var numeric = confirm ("Would you like to use numbers?");
@@ -20,9 +19,10 @@ function generatePassword() {
 
 //Validating password criteria
   if (passLength <8 || passLength > 128) {
-    prompt ("Please re-enter a password length between 8 - 128");  
-  } else if (lowerCase === false && upperCase === false && numeric === false && specialChar === false) {
-  alert ("Please choose one or more password criteria");
+    alert ("Please ensure number of characters is between 8 - 128 characters"); 
+  }
+  else if (lowerCase === false && upperCase === false && numeric === false && specialChar === false) {
+    alert ("Please select atleast one or more of the password criteria");
   } else {
   
   var lowerCaseChar = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];

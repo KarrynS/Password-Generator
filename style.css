@@ -13,8 +13,8 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: 'Courier New Sans Serif', Courier, monospace;
+  background-color: #dedfe0;
 }
 
 .wrapper {
@@ -40,6 +40,11 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  text-align: center;
+}
+
+.list {
+text-align: left;
 }
 
 .card-header::after {
